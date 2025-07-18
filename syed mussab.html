@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syed Mussab - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      background-color: #005f73;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      margin-top: 30px;
+      padding: 20px;
+      background: white;
+      border-left: 5px solid #0a9396;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #0a9396;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0a9396;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #007d84;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Syed Mussab</h1>
+    <p>🚀 Aspiring Web Developer & Computer Science Student</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and motivated individual pursuing a degree in Computer Science. I love solving problems and creating user-friendly websites and applications.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor in Computer Science</strong> - XYZ University (2022 - Present)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Interests</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React (Basics), Git & GitHub</li>
+      <li>Problem Solving, UI Design</li>
+      <li>Interest: Open Source, Web Design, DevOps</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Handwritten Digits Recognition App</strong> - Built with Python using Machine Learning and OpenCV.</p>
+    <button onclick="toggleDetails()">Show/Hide More Projects</button>
+    <div id="more-projects" style="display: none;">
+      <ul>
+        <li>Portfolio Website</li>
+        <li>Simple To-Do List App using JS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>Goals</h2>
+    <p>🌱 Grow into a full-stack developer and contribute to impactful software projects.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Info</h2>
+    <p>Email: syed.mussab@example.com</p>
+    <p>GitHub: github.com/syed-mussab</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Syed Mussab</p>
+  </footer>
+
+  <script>
+    function toggleDetails() {
+      const extra = document.getElementById('more-projects');
+      extra.style.display = extra.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
